@@ -1,0 +1,4 @@
+pydicom==2.4.3
+scipy==1.11.3
+matplotlib
+tk

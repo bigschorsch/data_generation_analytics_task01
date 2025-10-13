@@ -1,0 +1,21 @@
+We suggest to work with Anaconda as it creates a new environment, with name NAME
+without affecting any others and can be deleted after this course.
+If you work with Anaconda, the following commands will create your environment, it is similar with pip.
+
+conda create -n NAME python=3.9
+conda activate NAME
+conda install pydicom==2.4.3
+conda install scipy==1.11.3
+conda install matplotlib (Note: downgrading is fine)
+conda install tk (It should already be installed, but just to be safe)
+
+You can also install the required packages by using the requirements.txt file:
+conda install --yes --file requirements.txt
+
+Make sure to use the channel "conda-forge" for installing the packages.
+You can manage your channels with the Anaconda Navigator Application
+Go to Environments -> .your_env -> Channels -> Add -> Update Channels
+
+The code has been tested with PyCharm, Jupyter might not work.
+
+When creating a "New Project" with PyCharm, select the folder you want to work in, for example the one containing your datasets. For Python Interpreter select "Previously configured interpreter" and browse for your "Conda Environment", should be in YourUser/anaconda3/envs/NAME/python.exe. You want to create from existing source.
